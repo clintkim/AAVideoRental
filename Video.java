@@ -30,23 +30,43 @@ public abstract class Video {
     public abstract int getLimit();
     public abstract int getLateReturnPointPenalty();
 
-    public abstract int getPriceCode();
+    public int getPriceCode() {
+        return priceCode;
+    }
 
-    public abstract void setPriceCode(int priceCode);
+    public void setPriceCode(int priceCode){
+        this.priceCode = priceCode;
+    }
 
-    public abstract String getTitle();
+    public String getTitle() {
+        return title;
+    }
 
-    public abstract void setTitle(String title);
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
-    public abstract boolean isRented();
+    public boolean isRented() {
+        return rented;
+    }
 
-    public abstract void setRented(boolean rented);
+    public void setRented(boolean rented) {
+        this.rented = rented;
+    }
 
-    public abstract Date getRegisteredDate();
+    public Date getRegisteredDate() {
+        return registeredDate;
+    }
 
-    public abstract void setRegisteredDate(Date registeredDate);
+    public void setRegisteredDate(Date registeredDate) {
+        this.registeredDate = registeredDate;
+    }
 
-    public abstract int getVideoType();
+    public int getVideoType() {
+        return videoType;
+    }
 
-    public abstract void setVideoType(int videoType);
+    public void setVideoType(int videoType) {
+        this.videoType = videoType;
+    }
 }
