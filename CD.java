@@ -1,23 +1,15 @@
 import java.util.Date;
 
-public class Video extends VideoType {
+public class CD extends VideoType {
 
-	public Video(String title, int videoType, int priceCode, Date registeredDate) {
+	public CD(String title, int videoType, int priceCode, Date registeredDate) {
 		super(registeredDate);
 		this.setTitle(title) ;
-		this.setVideoType(videoType) ;
 		this.setPriceCode(priceCode) ;
 	}
-
 	@Override
 	public int getLateReturnPointPenalty() {
-		int pentalty = 0 ;
-		switch ( videoType ) {
-			case VHS: pentalty = 1 ; break ;
-			case CD: pentalty = 2 ; break ;
-			case DVD: pentalty = 3 ; break ;
-		}
-		return pentalty ;
+		return 2;
 	}
 	@Override
 	public int getPriceCode() {
