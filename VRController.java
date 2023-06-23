@@ -13,66 +13,6 @@ public class VRController {
         this.scanner = scanner;
     }
 
-    public static String getReport(Customer customer) {
-        String result = "Customer Report for " + customer.getName() + "\n";
-
-        List<Rental> rentals = customer.getRentals();
-
-        double totalCharge = 0;
-        int totalPoint = 0;
-
-        for (Rental each : rentals) {
-            double eachCharge = 0;
-            int eachPoint = 0 ;
-            int daysRented = 0;
-
-            if (each.getStatus() == 1) { // returned Video
-                long diff = each.getReturnDate().getTime() - each.getRentDate().getTime();
-                daysRented = (int) (diff / (1000 * 60 * 60 * 24)) + 1;
-            } else { // not yet returned
-                long diff = new Date().getTime() - each.getRentDate().getTime();
-                daysRented = (int) (diff / (1000 * 60 * 60 * 24)) + 1;
-            }
-
-            switch (each.getVideo().getPriceCode()) {
-            case Video.REGULAR:
-                eachCharge += 2;
-                if (daysRented > 2)
-                    eachCharge += (daysRented - 2) * 1.5;
-                break;
-            case Video.NEW_RELEASE:
-                eachCharge = daysRented * 3;
-                break;
-            }
-
-            eachPoint++;
-
-            if ((each.getVideo().getPriceCode() == Video.NEW_RELEASE) )
-                eachPoint++;
-
-            if ( daysRented > each.getDaysRentedLimit() )
-                eachPoint -= Math.min(eachPoint, each.getVideo().getLateReturnPointPenalty()) ;
-
-            result += "\t" + each.getVideo().getTitle() + "\tDays rented: " + daysRented + "\tCharge: " + eachCharge
-                    + "\tPoint: " + eachPoint + "\n";
-
-            totalCharge += eachCharge;
-
-            totalPoint += eachPoint ;
-        }
-
-        result += "Total charge: " + totalCharge + "\tTotal Point:" + totalPoint + "\n";
-
-
-        if ( totalPoint >= 10 ) {
-            System.out.println("Congrat! You earned one free coupon");
-        }
-        if ( totalPoint >= 30 ) {
-            System.out.println("Congrat! You earned two free coupon");
-        }
-        return result ;
-    }
-
     public void clearRentals() {
         System.out.println("Enter customer name: ");
         String customerName = scanner.next();
@@ -132,9 +72,8 @@ public class VRController {
         customers.add(james);
         customers.add(brown);
 
-
-        Video v1 = Video.createVideo("v1", Video.CD, Video.REGULAR, new Date());
-        Video v2 = Video.createVideo("v2", Video.DVD, Video.NEW_RELEASE, new Date());
+        Video v1 = new Video("v1", Video.CD, Video.REGULAR, new Date());
+        Video v2 = new Video("v2", Video.DVD, Video.NEW_RELEASE, new Date());
         videos.add(v1);
         videos.add(v2);
 
@@ -182,7 +121,7 @@ public class VRController {
         if (foundCustomer == null) {
             System.out.println("No customer found");
         } else {
-            String result = getReport(foundCustomer);
+            String result = foundCustomer.getReport();
             System.out.println(result);
         }
     }
@@ -239,7 +178,7 @@ public class VRController {
             int priceCode = scanner.nextInt();
 
             Date registeredDate = new Date();
-            Video video = Video.createVideo(title, videoType, priceCode, registeredDate);
+            Video video = new Video(title, videoType, priceCode, registeredDate);
             videos.add(video);
         }
     }
