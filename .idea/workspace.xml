@@ -4,19 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc8ff58e-6c1a-448a-801c-6b8472cf78f2" name="Changes" comment="apply SRP to getReport()">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/AAVideoRental/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/AAVideoRental/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CD.java" beforeDir="false" afterPath="$PROJECT_DIR$/CD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DVD.java" beforeDir="false" afterPath="$PROJECT_DIR$/DVD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rental.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rental.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VHS.java" beforeDir="false" afterPath="$PROJECT_DIR$/VHS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Video.java" beforeDir="false" afterPath="$PROJECT_DIR$/Video.java" afterDir="false" />
+    <list default="true" id="dc8ff58e-6c1a-448a-801c-6b8472cf78f2" name="Changes" comment="duplicated code on getDaysRented() &#10;Feature envy on getDaysRentedLimit()">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VRController.java" beforeDir="false" afterPath="$PROJECT_DIR$/VRController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +102,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1687500803316</updated>
-      <workItem from="1687500805767" duration="9892000" />
+      <workItem from="1687500805767" duration="10169000" />
     </task>
     <task id="LOCAL-00001" summary="add gitgnore">
       <option name="closed" value="true" />
@@ -154,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1687511123545</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="duplicated code on getDaysRented() &#10;Feature envy on getDaysRentedLimit()">
+      <option name="closed" value="true" />
+      <created>1687511561461</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1687511561461</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +175,7 @@
     <MESSAGE value="update git ignore" />
     <MESSAGE value="fix build error" />
     <MESSAGE value="apply SRP to getReport()" />
-    <option name="LAST_COMMIT_MESSAGE" value="apply SRP to getReport()" />
+    <MESSAGE value="duplicated code on getDaysRented() &#10;Feature envy on getDaysRentedLimit()" />
+    <option name="LAST_COMMIT_MESSAGE" value="duplicated code on getDaysRented() &#10;Feature envy on getDaysRentedLimit()" />
   </component>
 </project>

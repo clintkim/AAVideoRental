@@ -226,9 +226,7 @@ public class VRController {
         Rental rental = new Rental(foundVideo);
         foundVideo.setRented(true);
 
-        List<Rental> customerRentals = foundCustomer.getRentals();
-        customerRentals.add(rental);
-        foundCustomer.setRentals(customerRentals);
+        foundCustomer.addRental(rental);
     }
 
     public void register(String object) {
