@@ -1,71 +1,51 @@
 import java.util.Date;
 
-public class Video extends VideoType {
+public abstract class Video {
+    public static final int REGULAR = 1;
+    public static final int NEW_RELEASE = 2;
+    public static final int VHS = 1;
+    public static final int CD = 2;
+    public static final int DVD = 3;
+    protected Date registeredDate;
+    protected String title;
+    protected int priceCode;
+    protected boolean rented;
+    protected  int videoType;
 
-	public Video(String title, int videoType, int priceCode, Date registeredDate) {
-		super(registeredDate);
-		this.setTitle(title) ;
-		this.setVideoType(videoType) ;
-		this.setPriceCode(priceCode) ;
-	}
+    public Video(Date registeredDate) {
+        this.registeredDate = registeredDate;
+    }
 
-	@Override
-	public int getLateReturnPointPenalty() {
-		int pentalty = 0 ;
-		switch ( videoType ) {
-			case VHS: pentalty = 1 ; break ;
-			case CD: pentalty = 2 ; break ;
-			case DVD: pentalty = 3 ; break ;
-		}
-		return pentalty ;
-	}
-	@Override
-	public int getPriceCode() {
-		return priceCode;
-	}
+    public static Video createVideo(String title, int videoType, int priceCode, Date registeredDate) {
+        switch (videoType) {
+            case VHS:
+                return new VHS(title, priceCode, registeredDate);
+            case CD:
+                return new CD(title, priceCode, registeredDate);
+            default:
+                return new DVD(title, priceCode, registeredDate);
+        }
+    }
 
-	@Override
-	public void setPriceCode(int priceCode) {
-		this.priceCode = priceCode;
-	}
+    public abstract int getLateReturnPointPenalty();
 
-	@Override
-	public String getTitle() {
-		return title;
-	}
+    public abstract int getPriceCode();
 
-	@Override
-	public void setTitle(String title) {
-		this.title = title;
-	}
+    public abstract void setPriceCode(int priceCode);
 
-	@Override
-	public boolean isRented() {
-		return rented;
-	}
+    public abstract String getTitle();
 
-	@Override
-	public void setRented(boolean rented) {
-		this.rented = rented;
-	}
+    public abstract void setTitle(String title);
 
-	@Override
-	public Date getRegisteredDate() {
-		return registeredDate;
-	}
+    public abstract boolean isRented();
 
-	@Override
-	public void setRegisteredDate(Date registeredDate) {
-		this.registeredDate = registeredDate;
-	}
+    public abstract void setRented(boolean rented);
 
-	@Override
-	public int getVideoType() {
-		return videoType;
-	}
+    public abstract Date getRegisteredDate();
 
-	@Override
-	public void setVideoType(int videoType) {
-		this.videoType = videoType;
-	}
+    public abstract void setRegisteredDate(Date registeredDate);
+
+    public abstract int getVideoType();
+
+    public abstract void setVideoType(int videoType);
 }

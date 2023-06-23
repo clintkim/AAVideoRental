@@ -1,8 +1,8 @@
 import java.util.Date;
 
-public class DVD extends VideoType {
+public class DVD extends Video {
 
-	public DVD(String title, int videoType, int priceCode, Date registeredDate) {
+	public DVD(String title, int priceCode, Date registeredDate) {
 		super(registeredDate);
 		this.setTitle(title) ;
 		this.setPriceCode(priceCode) ;

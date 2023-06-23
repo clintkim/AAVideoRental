@@ -1,8 +1,8 @@
 import java.util.Date;
 
-public class CD extends VideoType {
+public class CD extends Video {
 
-	public CD(String title, int videoType, int priceCode, Date registeredDate) {
+	public CD(String title, int priceCode, Date registeredDate) {
 		super(registeredDate);
 		this.setTitle(title) ;
 		this.setPriceCode(priceCode) ;
