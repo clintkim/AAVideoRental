@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dc8ff58e-6c1a-448a-801c-6b8472cf78f2" name="Changes" comment="apply SRP to getReport()">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/AAVideoRental/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/AAVideoRental/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CD.java" beforeDir="false" afterPath="$PROJECT_DIR$/CD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DVD.java" beforeDir="false" afterPath="$PROJECT_DIR$/DVD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rental.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rental.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VHS.java" beforeDir="false" afterPath="$PROJECT_DIR$/VHS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Video.java" beforeDir="false" afterPath="$PROJECT_DIR$/Video.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+  }
+}]]></component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="Revert &quot;fix build error&quot;&#10;&#10;This reverts commit a7f3ad34fcf3562b80ab8cab2320e0442f24afcf." />
+        <option name="rewordedMessage" value="Revert merge error&#10;&#10;Revert &quot;add gitgnore&quot;&#10;&#10;This reverts commit 160d2e8fd56ac5580bbda983cf3a82b544e85be8.&#10;&#10;&#10;Revert &quot;Domain + Presentation 분리&quot;&#10;&#10;This reverts commit 6c385b5538a2d0b913fc6eb409909d21ab874ed9.&#10;&#10;&#10;Revert &quot;update git ignore&quot;&#10;&#10;This reverts commit dfd309589d16172c6dd28c5687186c73f2131e85.&#10;&#10;&#10;Revert &quot;fix build error&quot;&#10;&#10;This reverts commit a7f3ad34fcf3562b80ab8cab2320e0442f24afcf." />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="a7f3ad34fcf3562b80ab8cab2320e0442f24afcf" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="10fdc2db-186b-45b5-9f31-0cdc4d61a9db" />
+        <option name="url" value="https://github.com/clintkim/AAVideoRental.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Rav2zodR7F2KyLaPfrwwSiUBNT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/WorkSpace/InteliJ",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="VRController" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="VRUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="VRUI" />
+      <module name="AAVideoRental" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.VRUI" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dc8ff58e-6c1a-448a-801c-6b8472cf78f2" name="Changes" comment="" />
+      <created>1687500803316</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687500803316</updated>
+      <workItem from="1687500805767" duration="9892000" />
+    </task>
+    <task id="LOCAL-00001" summary="add gitgnore">
+      <option name="closed" value="true" />
+      <created>1687500926705</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1687500926705</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Domain + Presentation 분리">
+      <option name="closed" value="true" />
+      <created>1687504118460</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1687504118460</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update git ignore">
+      <option name="closed" value="true" />
+      <created>1687508415410</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1687508415410</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix build error">
+      <option name="closed" value="true" />
+      <created>1687509029854</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1687509029854</updated>
+    </task>
+    <task id="LOCAL-00005" summary="apply SRP to getReport()">
+      <option name="closed" value="true" />
+      <created>1687511123545</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1687511123545</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add gitgnore" />
+    <MESSAGE value="Domain + Presentation 분리" />
+    <MESSAGE value="update git ignore" />
+    <MESSAGE value="fix build error" />
+    <MESSAGE value="apply SRP to getReport()" />
+    <option name="LAST_COMMIT_MESSAGE" value="apply SRP to getReport()" />
+  </component>
+</project>

@@ -7,6 +7,12 @@ public class CD extends Video {
 		this.setTitle(title) ;
 		this.setPriceCode(priceCode) ;
 	}
+
+	@Override
+	public int getLimit() {
+		return 3;
+	}
+
 	@Override
 	public int getLateReturnPointPenalty() {
 		return 2;

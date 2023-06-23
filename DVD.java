@@ -7,6 +7,11 @@ public class DVD extends Video {
 		this.setTitle(title) ;
 		this.setPriceCode(priceCode) ;
 	}
+
+	@Override
+	public int getLimit() {
+		return 2;
+	}
 	@Override
 	public int getLateReturnPointPenalty() {
 		return 3;
